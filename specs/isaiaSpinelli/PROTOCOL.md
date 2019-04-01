@@ -11,6 +11,9 @@
     2. Bonjour du serveur ('Hi man')
     3. Demande du client   (Opération avec ' ' comme séparateur)
     4. Réponse ou précision du serveur (Réponse de l'opération ou message de correction)
+		après l'étape 4, le client peut refaire une demande.
+	5. Fin du client ("Bye!")
+	6. ( Fin du serveur (Bye man) )
 
 5. Que se passe-t-il lorsqu'un message est reçu de l'autre partie?
     il est ignoré (sauf si c'est le client envoye plusieurs opération)
@@ -31,5 +34,11 @@
     Client  : fdsfsfd
    
     Client  : Hi!
-    Serveur : Hi!
-    
+    Serveur : Hi man
+	
+    Client  : 2 * 4 + 3 =
+	Serveur : 11
+	
+	Client  : 2 * 4 + 3 
+	Serveur : manque le caractère '='
+	
